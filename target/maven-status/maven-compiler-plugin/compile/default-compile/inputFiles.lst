@@ -1,0 +1,16 @@
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\exception\handler\ExceptionsHandler.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\model\common\OrderItem.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\model\common\ErrorResponse.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\repository\OrderItemRepository.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\service\ProductService.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\controller\ProductController.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\model\common\Order.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\validator\CreateProductRequestValidator.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\repository\ProductRepository.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\enums\StatusEnum.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\service\impl\ProductServiceImpl.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\WebshopApplication.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\model\common\Customer.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\model\common\Product.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\repository\CustomerRepository.java
+C:\Users\Vinko\Desktop\JAVA TESTS\webshop\webshop\src\main\java\hr\ingemark\webshop\repository\OrderRepository.java

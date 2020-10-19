@@ -1,0 +1,16 @@
+hr\ingemark\webshop\model\common\Product.class
+hr\ingemark\webshop\controller\ProductController.class
+hr\ingemark\webshop\model\common\Order.class
+hr\ingemark\webshop\validator\CreateProductRequestValidator.class
+hr\ingemark\webshop\model\common\ErrorResponse.class
+hr\ingemark\webshop\repository\CustomerRepository.class
+hr\ingemark\webshop\model\common\OrderItem.class
+hr\ingemark\webshop\repository\OrderItemRepository.class
+hr\ingemark\webshop\repository\ProductRepository.class
+hr\ingemark\webshop\WebshopApplication.class
+hr\ingemark\webshop\enums\StatusEnum.class
+hr\ingemark\webshop\service\ProductService.class
+hr\ingemark\webshop\model\common\Customer.class
+hr\ingemark\webshop\service\impl\ProductServiceImpl.class
+hr\ingemark\webshop\exception\handler\ExceptionsHandler.class
+hr\ingemark\webshop\repository\OrderRepository.class
