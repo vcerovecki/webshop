@@ -28,18 +28,18 @@ public class ProductController {
 	private ProductService iProductService;
 
 	@PostMapping()
-	public void createProduct(@Valid @RequestBody Product pProduct) throws CustomException {
-		iProductService.save(pProduct);
+	public ResponseEntity<CustomResponse> createProduct(@Valid @RequestBody Product pProduct) throws CustomException {
+		return new ResponseEntity<CustomResponse>(iProductService.save(pProduct), HttpStatus.OK);
 	}
 	
 	@PutMapping("/{id}")
-	public void updateProduct(@Validated @RequestBody Product pProduct, @PathVariable("id") Long pId) throws CustomException {
-		iProductService.update(pId, pProduct);
+	public ResponseEntity<CustomResponse> updateProduct(@Validated @RequestBody Product pProduct, @PathVariable("id") Long pId) throws CustomException {
+		return new ResponseEntity<CustomResponse>(iProductService.update(pId, pProduct), HttpStatus.OK);
 	}
 	
 	@DeleteMapping("/{id}")
-	public void deleteProduct(@PathVariable("id") Long id) throws CustomException {
-		iProductService.delete(id);
+	public ResponseEntity<CustomResponse> deleteProduct(@PathVariable("id") Long id) throws CustomException {
+		return new ResponseEntity<CustomResponse>(iProductService.delete(id), HttpStatus.OK);
 	}
 	
 	@GetMapping()

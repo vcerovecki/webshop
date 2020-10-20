@@ -30,9 +30,12 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public CustomResponse update(Long pId, Product entity) throws CustomException {
-		Optional<Product> tProductData = iProductRepository.findById(pId);
+		Optional<Product> tProductData = iProductRepository.findByCode(entity.getCode());
 		if(tProductData.isPresent()) {
 			Product tNewProduct = tProductData.get();
+			if(tNewProduct.getId() != pId) {
+				throw new CustomException(102, "Product (code = " + entity.getCode() + ") already exists.");
+			}
 			tNewProduct.setCode(entity.getCode());
 			tNewProduct.setDescription(entity.getDescription());
 			tNewProduct.setName(entity.getName());

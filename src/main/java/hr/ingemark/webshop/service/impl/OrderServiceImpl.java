@@ -124,8 +124,16 @@ public class OrderServiceImpl implements OrderService {
 		return tOrderItems;
 	}
 
-	private boolean checkProduct(Long product) {
-		return iProductRepostiory.existsById(product);
+	private boolean checkProduct(Long product) throws CustomException {
+		Optional<Product> tProductData = iProductRepostiory.findById(product);
+		if(tProductData.isPresent()) {
+			Product tProduct = tProductData.get();
+			if(!tProduct.isAvailable()) {
+				throw new CustomException(103, "Product (ID = " + product + ") is not available!");
+			}
+			return true;
+		}
+		return false;
 	}
 
 	@Override
