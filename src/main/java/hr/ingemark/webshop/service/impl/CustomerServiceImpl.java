@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import hr.ingemark.webshop.model.Customer;
 import hr.ingemark.webshop.model.common.CustomResponse;
@@ -11,6 +12,7 @@ import hr.ingemark.webshop.repository.CustomerRepository;
 import hr.ingemark.webshop.service.CustomerService;
 import hr.ingemark.webshop.util.CreateResponseUtil;
 
+@Service
 public class CustomerServiceImpl implements CustomerService {
 
 	@Autowired

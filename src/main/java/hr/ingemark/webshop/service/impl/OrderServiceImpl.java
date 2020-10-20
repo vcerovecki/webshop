@@ -1,10 +1,8 @@
 package hr.ingemark.webshop.service.impl;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -96,7 +94,7 @@ public class OrderServiceImpl implements OrderService {
 				tNewOrder.setOrderItems(tOrderItems);
 			}
 			iOrderRepository.save(tNewOrder);
-			return CreateResponseUtil.createResponse(21, "Order successfully updated.", tNewOrder);
+			return CreateResponseUtil.createResponse(200, "Order successfully updated.", tNewOrder);
 		} else {
 			throw new CustomException(101, "Order (ID = " + pId + ") doesn't exist.");
 		}
@@ -165,7 +163,6 @@ public class OrderServiceImpl implements OrderService {
 	private Double claculateTotalEur(Double pTotalHrk) {
 		ExchangeRate[] tExchangeRate = iHnbRestClient.fetchEurExchangeRate();
 		return pTotalHrk * tExchangeRate[0].getMiddleExchange();
-
 	}
 
 }

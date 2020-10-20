@@ -12,28 +12,27 @@ import lombok.Data;
 @JsonInclude(Include.NON_NULL)
 public class CustomResponse {
 
-	private int code;
-	private String message;
+	private MessageType messageType;
 	private WebShopEntity entity;
 	private List<WebShopEntity> entities;
 	
 	public CustomResponse(int code, String message) {
 		super();
-		this.code = code;
-		this.message = message;
+		MessageType tMessageType = new MessageType(code, message);
+		this.messageType = tMessageType;
 	}
 	
 	public CustomResponse(int code, String message, List<WebShopEntity> entities) {
 		super();
-		this.code = code;
-		this.message = message;
+		MessageType tMessageType = new MessageType(code, message);
+		this.messageType = tMessageType;
 		this.entities = entities;
 	}
 
 	public CustomResponse(int code, String message, WebShopEntity entity) {
 		super();
-		this.code = code;
-		this.message = message;
+		MessageType tMessageType = new MessageType(code, message);
+		this.messageType = tMessageType;
 		this.entity = entity;
 	}
 	
